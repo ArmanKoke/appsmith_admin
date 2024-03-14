@@ -1,0 +1,1 @@
+SELECT * FROM tas_gateway_core."tch_accounts" WHERE client_login = {{inp_login.text}};

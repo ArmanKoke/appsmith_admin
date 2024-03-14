@@ -1,0 +1,8 @@
+INSERT INTO tas_gateway_core."tch_acl" (
+	"response_topic",
+	"id_account",
+	"id_endpoint")
+VALUES (
+	'{{insert_form.formData.response_topic}}',
+	'{{insert_form.formData.id_account}}',
+	'{{insert_form.formData.id_endpoint}}');

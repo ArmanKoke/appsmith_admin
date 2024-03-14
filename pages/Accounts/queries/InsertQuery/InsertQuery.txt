@@ -1,0 +1,6 @@
+INSERT INTO tas_gateway_core."tch_accounts" (
+	"client_login",
+	"client_password")
+VALUES (
+	'{{insert_form.formData.client_login}}',
+	'{{insert_form.formData.client_password}}');

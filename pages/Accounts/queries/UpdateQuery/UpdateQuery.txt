@@ -1,0 +1,4 @@
+UPDATE tas_gateway_core."tch_accounts" SET
+		"client_login" = '{{update_form.fieldState.client_login.isVisible ? update_form.formData.client_login : update_form.sourceData.client_login}}',
+		"client_password" = '{{update_form.fieldState.client_password.isVisible ? update_form.formData.client_password : update_form.sourceData.client_password}}'
+WHERE "id" = {{data_table.selectedRow.id}};

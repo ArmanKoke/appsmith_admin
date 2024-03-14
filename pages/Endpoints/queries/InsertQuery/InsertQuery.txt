@@ -1,0 +1,6 @@
+INSERT INTO tas_gateway_core."tch_endpoints" (
+	"url",
+	"description")
+VALUES (
+	'{{insert_form.formData.url}}',
+	'{{insert_form.formData.description}}');

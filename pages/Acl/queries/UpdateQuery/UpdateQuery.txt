@@ -1,0 +1,5 @@
+UPDATE tas_gateway_core."tch_acl" SET
+		"response_topic" = '{{update_form.fieldState.response_topic.isVisible ? update_form.formData.response_topic : update_form.sourceData.response_topic}}',
+		"id_account" = '{{update_form.fieldState.id_account.isVisible ? update_form.formData.id_account : update_form.sourceData.id_account}}',
+    "id_endpoint" = '{{update_form.fieldState.id_endpoint.isVisible ? update_form.formData.id_endpoint : update_form.sourceData.id_endpoint}}'
+WHERE "id" = {{data_table.selectedRow.id}};

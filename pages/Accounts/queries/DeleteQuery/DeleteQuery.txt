@@ -1,0 +1,2 @@
+DELETE FROM tas_gateway_core."tch_accounts"
+  WHERE "id" = {{data_table.triggeredRow.id}};
