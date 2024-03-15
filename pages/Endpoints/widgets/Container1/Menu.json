@@ -24,7 +24,7 @@
             "index": 2,
             "label": "Acl",
             "isVisible": true,
-            "buttonType": "MENU",
+            "buttonType": "SIMPLE",
             "buttonVariant": "filled",
             "id": "groupButtonamq8equ9sz",
             "isDisabled": false,
@@ -46,7 +46,7 @@
         },
         "groupButton2": {
             "onClick": "{{navigateTo('Endpoints', {}, 'SAME_WINDOW').catch(() => {\n  showAlert('No endpoints page!', 'error');\n});}}",
-            "buttonType": "SIMPLE",
+            "buttonType": "MENU",
             "iconName": "data-lineage",
             "buttonColor": "#eab308",
             "widgetId": "",

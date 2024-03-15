@@ -15,10 +15,10 @@
         {"key": "accentColor"},
         {"key": "borderRadius"},
         {"key": "boxShadow"},
-        {"key": "primaryColumns.customColumn1.borderRadius"},
         {"key": "primaryColumns.id.computedValue"},
         {"key": "primaryColumns.url.computedValue"},
-        {"key": "primaryColumns.description.computedValue"}
+        {"key": "primaryColumns.description.computedValue"},
+        {"key": "primaryColumns.customColumn1.menuColor"}
     ],
     "leftColumn": 0,
     "delimiter": ",",
@@ -64,14 +64,11 @@
         "description",
         "customColumn1"
     ],
-    "dynamicPropertyPathList": [
-        {"key": "primaryColumns.customColumn1.borderRadius"},
-        {"key": "tableData"}
-    ],
+    "dynamicPropertyPathList": [{"key": "tableData"}],
     "displayName": "Table",
     "bottomRow": 85,
     "parentRowSpace": 10,
-    "columnWidthMap": {"description": 362},
+    "columnWidthMap": {"description": 441},
     "hideCard": false,
     "parentColumnSpace": 16.3125,
     "dynamicTriggerPathList": [
@@ -117,27 +114,29 @@
         },
         "customColumn1": {
             "isCellVisible": true,
-            "boxShadow": "none",
             "isDerived": true,
             "computedValue": "",
             "onClick": "{{showModal('Delete_Modal')}}",
-            "buttonColor": "#DD4B34",
+            "iconName": "delete",
+            "buttonColor": "#ef4444",
             "buttonStyle": "rgb(3, 179, 101)",
             "index": 5,
             "isVisible": true,
             "label": "Delete",
             "labelColor": "#FFFFFF",
             "buttonLabel": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
-            "columnType": "button",
-            "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-            "menuColor": "#03B365",
+            "columnType": "iconButton",
+            "horizontalAlignment": "LEFT",
+            "borderRadius": "1.5rem",
+            "menuColor": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
             "width": 150,
             "enableFilter": true,
             "sticky": "right",
             "enableSort": true,
             "id": "customColumn1",
             "isDisabled": false,
-            "buttonLabelColor": "#FFFFFF"
+            "buttonLabelColor": "#FFFFFF",
+            "customAlias": ""
         },
         "id": {
             "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",

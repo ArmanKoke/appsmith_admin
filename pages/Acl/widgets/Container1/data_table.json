@@ -3,7 +3,7 @@
     "onSort": "{{SelectQuery.run()}}",
     "isVisibleDownload": true,
     "iconSVG": "/static/media/icon.db8a9cbd.svg",
-    "topRow": 6,
+    "topRow": 5,
     "isSortable": true,
     "onPageChange": "{{SelectQuery.run()}}",
     "type": "TABLE_WIDGET_V2",
@@ -15,11 +15,11 @@
         {"key": "accentColor"},
         {"key": "borderRadius"},
         {"key": "boxShadow"},
-        {"key": "primaryColumns.customColumn1.borderRadius"},
         {"key": "primaryColumns.id.computedValue"},
         {"key": "primaryColumns.id_account.computedValue"},
         {"key": "primaryColumns.id_endpoint.computedValue"},
-        {"key": "primaryColumns.response_topic.computedValue"}
+        {"key": "primaryColumns.response_topic.computedValue"},
+        {"key": "primaryColumns.customColumn1.menuColor"}
     ],
     "leftColumn": 0,
     "delimiter": ",",
@@ -50,7 +50,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1710441329757,
+    "columnUpdatedAt": 1710509179850,
     "primaryColumnId": "id",
     "columnSizeMap": {
         "task": 245,
@@ -66,18 +66,15 @@
         "response_topic",
         "customColumn1"
     ],
-    "dynamicPropertyPathList": [
-        {"key": "primaryColumns.customColumn1.borderRadius"},
-        {"key": "tableData"}
-    ],
+    "dynamicPropertyPathList": [{"key": "tableData"}],
     "displayName": "Table",
-    "bottomRow": 85,
+    "bottomRow": 84,
     "parentRowSpace": 10,
     "columnWidthMap": {
-        "id_endpoint": 113,
-        "response_topic": 406,
-        "id_account": 110,
-        "id": 76
+        "id_endpoint": 136,
+        "response_topic": 338,
+        "id_account": 119,
+        "id": 81
     },
     "hideCard": false,
     "parentColumnSpace": 16.3125,
@@ -192,27 +189,29 @@
         },
         "customColumn1": {
             "isCellVisible": true,
-            "boxShadow": "none",
             "isDerived": true,
             "computedValue": "",
             "onClick": "{{showModal('Delete_Modal')}}",
-            "buttonColor": "#DD4B34",
+            "iconName": "delete",
+            "buttonColor": "#ef4444",
             "buttonStyle": "rgb(3, 179, 101)",
             "index": 5,
             "isVisible": true,
             "label": "Delete",
             "labelColor": "#FFFFFF",
             "buttonLabel": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
-            "columnType": "button",
-            "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-            "menuColor": "#03B365",
+            "columnType": "iconButton",
+            "horizontalAlignment": "LEFT",
+            "borderRadius": "1.5rem",
+            "menuColor": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
             "width": 150,
             "enableFilter": true,
             "sticky": "right",
             "enableSort": true,
             "id": "customColumn1",
             "isDisabled": false,
-            "buttonLabelColor": "#FFFFFF"
+            "buttonLabelColor": "#FFFFFF",
+            "customAlias": ""
         },
         "id": {
             "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
