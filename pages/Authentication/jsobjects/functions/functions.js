@@ -2,7 +2,7 @@ export default {
 	reLogin: async () => {
 		showAlert("Re-login please")
 		
-		navigateTo("Authentication");
+		return navigateTo("Authentication");
 	},
 
 	signIn: async () => {
@@ -11,7 +11,7 @@ export default {
 		try {
 			const [user] = await findUserByLogin.run()
 
-			if (user && user.id !== 0 && password.length !== 0) {
+			if (user && user.id !== 0 && password.length !== 0) {			
 				navigateTo('Accounts');
 				
 				// setTimeout(await this.reLogin(), 5000)
