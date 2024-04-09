@@ -24,7 +24,7 @@
             "index": 2,
             "label": "Acl",
             "isVisible": true,
-            "buttonType": "MENU",
+            "buttonType": "SIMPLE",
             "buttonVariant": "filled",
             "id": "groupButtonamq8equ9sz",
             "isDisabled": false,

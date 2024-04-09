@@ -9,8 +9,8 @@
         "click",
         "submit"
     ],
-    "topRow": 1,
-    "bottomRow": 5,
+    "topRow": 0,
+    "bottomRow": 4,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
@@ -75,7 +75,7 @@
     "orientation": "horizontal",
     "isDeprecated": false,
     "rightColumn": 50,
-    "widgetId": "osvx09kkbk",
+    "widgetId": "isi93e4m8r",
     "minWidth": 450,
     "isVisible": true,
     "version": 1,

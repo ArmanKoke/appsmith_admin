@@ -1,25 +1,27 @@
-export default {
-
-	defaultTab: 'Sign In',
-
-	setDefaultTab: (newTab) => {
-		this.defaultTab = newTab;
-	},
-
-	createToken: async (user) => {		
-		return jsonwebtoken.sign(user, 'secret', {expiresIn: 60*60});
+export default {	
+	reLogin: async () => {
+		showAlert("Re-login please")
+		
+		return navigateTo("Authentication");
 	},
 
 	signIn: async () => {
-		// const password = inp_password.text;
+		const password = inp_password.text;
 
-		const [user] = await findUserByLogin.run();
+		try {
+			const [user] = await findUserByLogin.run()
 
-		if (user && user.id !== 0) {
-			storeValue('token', await this.createToken(user))
-				.then(() => navigateTo('Home'))
-		} else {
-			return showAlert('Invalid login/password combination', 'error');
+			if (user && user.id !== 0 && password.length !== 0) {			
+				navigateTo('Accounts');
+				
+				// setTimeout(await this.reLogin(), 5000)
+			} else {
+				return showAlert('Invalid login/password combination', 'error');
+			}
+		} catch(err) {
+			showAlert('Internal error', 'error');
+
+			console.log(err);
 		}
 	},
 }

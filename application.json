@@ -2,11 +2,11 @@
   "pages": [
     {
       "id": "Authentication",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "Accounts",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "Endpoints",
@@ -30,7 +30,7 @@
       "colorStyle": "light",
       "logoAssetId": "",
       "logoConfiguration": "logoOnly",
-      "showSignIn": true
+      "showSignIn": false
     }
   },
   "color": "#E3DEFF",
