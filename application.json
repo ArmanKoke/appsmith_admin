@@ -22,7 +22,7 @@
   "unreadCommentThreads": 0,
   "unpublishedApplicationDetail": {
     "navigationSetting": {
-      "showNavbar": true,
+      "showNavbar": false,
       "orientation": "top",
       "navStyle": "inline",
       "position": "static",
