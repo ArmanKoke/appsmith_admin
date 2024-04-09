@@ -24,7 +24,7 @@
     "navigationSetting": {
       "showNavbar": false,
       "orientation": "top",
-      "navStyle": "stacked",
+      "navStyle": "inline",
       "position": "static",
       "itemStyle": "text",
       "colorStyle": "light",
