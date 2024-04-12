@@ -2,11 +2,11 @@
   "pages": [
     {
       "id": "Authentication",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "Accounts",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "Endpoints",

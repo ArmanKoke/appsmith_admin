@@ -27,6 +27,7 @@
       ]
     },
     "executeOnLoad": true,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
