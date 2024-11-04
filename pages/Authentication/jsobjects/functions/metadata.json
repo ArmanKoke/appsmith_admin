@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "65f32f6e703438070835cba7_65f33111703438070835cbcc",
+  "id": "Authentication_functions",
   "unpublishedCollection": {
     "name": "functions",
     "pageId": "Authentication",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Authentication_functions",
-  "deleted": false,
-  "gitSyncId": "65f32f6e703438070835cba7_65f33111703438070835cbcc"
+    "variables": []
+  }
 }
