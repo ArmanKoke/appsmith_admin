@@ -1,92 +1,108 @@
 {
-    "boxShadow": "none",
-    "mobileBottomRow": 5,
-    "widgetName": "Menu",
-    "isCanvas": false,
-    "displayName": "Button Group",
-    "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 1,
-    "bottomRow": 5,
-    "parentRowSpace": 10,
-    "type": "BUTTON_GROUP_WIDGET",
-    "groupButtons": {
-        "groupButtonamq8equ9sz": {
-            "itemType": "BUTTON",
-            "onClick": "{{navigateTo('Acl', {}, 'SAME_WINDOW').catch(() => {\n  showAlert('No acl page!', 'error');\n});}}",
-            "buttonColor": "#22c55e",
-            "iconName": "key-command",
-            "widgetId": "zrdnmrj5rl",
-            "menuItems": {},
-            "index": 2,
-            "label": "Acl",
-            "isVisible": true,
-            "buttonType": "SIMPLE",
-            "buttonVariant": "filled",
-            "id": "groupButtonamq8equ9sz",
-            "isDisabled": false,
-            "placement": "CENTER"
-        },
-        "groupButton1": {
-            "onClick": "{{navigateTo('Accounts', {}, 'SAME_WINDOW').catch(() => {\n  showAlert('No accounts page!', 'error');\n});}}",
-            "buttonType": "SIMPLE",
-            "iconName": "user",
-            "buttonColor": "#3b82f6",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 0,
-            "label": "Accounts",
-            "id": "groupButton1",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButton2": {
-            "onClick": "{{navigateTo('Endpoints', {}, 'SAME_WINDOW').catch(() => {\n  showAlert('No endpoints page!', 'error');\n});}}",
-            "buttonType": "MENU",
-            "iconName": "data-lineage",
-            "buttonColor": "#eab308",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 1,
-            "label": "Endpoints",
-            "id": "groupButton2",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        }
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "buttonVariant": "SECONDARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
     },
-    "hideCard": false,
-    "mobileRightColumn": 24,
-    "animateLoading": true,
-    "parentColumnSpace": 13.636474609375,
-    "dynamicTriggerPathList": [
-        {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButtonamq8equ9sz.onClick"}
-    ],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "groupButtons.groupButton1.onClick"}],
-    "isDisabled": false,
-    "key": "i2khtpywrp",
-    "orientation": "horizontal",
-    "isDeprecated": false,
-    "rightColumn": 50,
-    "widgetId": "sdmdyzmk3q",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "59rw5mx0bq",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 1,
-    "responsiveBehavior": "fill",
-    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "borderRadius": "0px",
-    "mobileLeftColumn": 0,
-    "buttonVariant": "SECONDARY"
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonamq8equ9sz.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "#3b82f6",
+      "buttonType": "SIMPLE",
+      "iconName": "user",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Accounts",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Accounts', {}, 'SAME_WINDOW').catch(() => {\n  showAlert('No accounts page!', 'error');\n});}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "#eab308",
+      "buttonType": "MENU",
+      "iconName": "data-lineage",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Endpoints",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Endpoints', {}, 'SAME_WINDOW').catch(() => {\n  showAlert('No endpoints page!', 'error');\n});}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButtonamq8equ9sz": {
+      "buttonColor": "#22c55e",
+      "buttonType": "SIMPLE",
+      "buttonVariant": "filled",
+      "iconName": "key-command",
+      "id": "groupButtonamq8equ9sz",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Acl",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Acl', {}, 'SAME_WINDOW').catch(() => {\n  showAlert('No acl page!', 'error');\n});}}",
+      "placement": "CENTER",
+      "widgetId": "zrdnmrj5rl"
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "i2khtpywrp",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 24,
+  "mobileTopRow": 1,
+  "orientation": "horizontal",
+  "parentColumnSpace": 13.636474609375,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 50,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 1,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "sdmdyzmk3q",
+  "widgetName": "Menu"
 }
